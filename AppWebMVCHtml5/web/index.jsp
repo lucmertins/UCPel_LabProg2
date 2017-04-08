@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html >
-    <head>
-        <meta charset="UTF-8">
-        <title>Login Form</title>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="./css/login.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Teste">
+        <title>Teste com css</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+         <link rel="stylesheet" href="./css/menu.css" >
+        <link rel="stylesheet" href="./css/tables.css">
+        <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
     </head>
-
     <body>
-        <div class="login">
-            <h1>UCPel</h1>
-            <form action="principal.lp2" method="post">
-                <input type="text" name="u" placeholder="Username" required="required" />
-                <input type="password" name="p" placeholder="Password" required="required" />
-                <button type="submit" class="btn btn-primary btn-block btn-large">Entrar</button>
-            </form>
-        </div>
-
-        <script src="js/index.js"></script>
-
+        <jsp:include page="header.jsp" />
     </body>
 </html>
