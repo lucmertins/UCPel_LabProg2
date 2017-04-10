@@ -26,7 +26,7 @@ public class ServletPrincipal5 extends HttpServlet {
         Connection conn = null;
         try {
             Context context = new InitialContext();
-            dataSource = (DataSource) context.lookup("jdbc/BaseUCPel");
+            dataSource = (DataSource) context.lookup("jdbc/BaseUCPel6");
             conn = dataSource.getConnection();
             String acao = req.getParameter("acao");
             switch (acao) {
@@ -42,6 +42,7 @@ public class ServletPrincipal5 extends HttpServlet {
                 case "departamento":
                     DepartamentoController dc = new DepartamentoController(req, resp, conn);
                     dc.processo();
+                    break;
                 default:
                     RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
                     dispatcher.forward(req, resp);

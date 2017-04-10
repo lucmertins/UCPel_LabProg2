@@ -1,3 +1,8 @@
+<%-- 
+    Document   : formDepartamento
+    Created on : April 4, 2017, 2:39:54 PM
+    Author     : mertins
+--%>
 <!DOCTYPE html>
 <html >
     <head>
@@ -13,10 +18,5 @@
     </head>
     <body>
         <jsp:include page="header.jsp" />
-        <div class="pure-g">
-            <div class="pure-u-1-1">
-                <img src="./image/computacao.jpg"  class="pure-img"/>
-            </div>	 
-            <div
     </body>
 </html>
