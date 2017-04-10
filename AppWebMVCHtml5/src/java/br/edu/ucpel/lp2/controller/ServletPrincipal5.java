@@ -26,7 +26,7 @@ public class ServletPrincipal5 extends HttpServlet {
         Connection conn = null;
         try {
             Context context = new InitialContext();
-            dataSource = (DataSource) context.lookup("jdbc/BaseUCPel6");
+            dataSource = (DataSource) context.lookup("jdbc/BaseUCPel");
             conn = dataSource.getConnection();
             String acao = req.getParameter("acao");
             switch (acao) {
