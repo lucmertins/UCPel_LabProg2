@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author mertins
  */
-@WebFilter(filterName = "AutenticacaoHtml5", urlPatterns = {"/teste *"})
+@WebFilter(filterName = "AutenticacaoHtml5", urlPatterns = {"*.jsp","*.lp2"})
 public class AutenticacaoHtml5 implements Filter {
 
     private FilterConfig filterConfig = null;
@@ -95,7 +95,7 @@ public class AutenticacaoHtml5 implements Filter {
         boolean ret = false;
         String pagina = req.getRequestURI();
         String acao = req.getParameter("acao");
-        if (pagina != null && "login".equals(acao) && pagina.endsWith("principal")) {
+        if (pagina != null && "login".equals(acao) && pagina.endsWith("principal.lp2")) {
             Logger.getLogger(AutenticacaoHtml5.class.getName()).log(Level.INFO, String.format("Acesso autorizado sem autenticação à página [%s]", pagina));
             ret = true;
         }
