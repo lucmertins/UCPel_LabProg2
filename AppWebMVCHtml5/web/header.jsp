@@ -9,8 +9,8 @@
             </div>
             <div class="pure-u-1 pure-u-md-1-2 pure-menu pure-menu-open pure-menu-horizontal custom-can-transform">
                 <form action="principal.lp2" method="post" class="pure-form form-custom">
-                    <input type="text" name="u" placeholder="Username" required="required" class="input-head-custom pure-input-1-3 " />
-                    <input type="password" name="p" placeholder="Password" required="required" class="pure-input-1-3 input-head-custom"/>
+                    <input type="text" name="u" placeholder="Username" required="required" class="input-head-custom pure-input-1-3 " autocomplete="off"/>
+                    <input type="password" name="p" placeholder="Password" required="required" class="pure-input-1-3 input-head-custom" autocomplete="off"/>
                     <button type="submit" class="btn btn-primary pure-bt-1-3 ">Entrar</button>
                 </form>
             </div>

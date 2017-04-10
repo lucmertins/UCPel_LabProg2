@@ -13,5 +13,9 @@
     </head>
     <body>
         <jsp:include page="header.jsp" />
+        
+        <div class="w3-justify">
+          <img src="./image/computacao.jpg"  style="width:100%" />
+        </div>
     </body>
 </html>
